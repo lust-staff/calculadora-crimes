@@ -1,0 +1,38 @@
+[
+    {
+        "artigo": 46,
+        "alinea": 3,
+        "subalinea": 0,
+        "nome": "Assédio Sexual",
+        "coima": 250000,
+        "pontos": 0,
+        "prisao_min": 5,
+        "prisao": 8,
+        "prisao_max": 10,
+        "gravidade": 3
+    },
+    {
+        "artigo": 46,
+        "alinea": 1,
+        "subalinea": 1,
+        "nome": "Discriminação Racial, Religiosa ou Sexual",
+        "coima": 50000,
+        "pontos": 0,
+        "prisao_min": 1,
+        "prisao": 5,
+        "prisao_max": 8,
+        "gravidade": 2
+    },
+    {
+        "artigo": 47,
+        "alinea": 0,
+        "subalinea": 0,
+        "nome": "Tortura e outros Tratamentos Cruéis, Degradantes ou Desumanos Graves",
+        "coima": 50000,
+        "pontos": 0,
+        "prisao_min": 1,
+        "prisao": 5,
+        "prisao_max": 8,
+        "gravidade": 2
+    }
+]

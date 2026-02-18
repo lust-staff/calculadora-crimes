@@ -1,0 +1,74 @@
+[
+    {
+        "artigo": 0,
+        "alinea": 0,
+        "subalinea": 0,
+        "nome": "Exercício de Pesca sem Licença",
+        "coima": 100000,
+        "pontos": 0,
+        "prisao_min": 0,
+        "prisao": 0,
+        "prisao_max": 0,
+        "gravidade": 0
+    },
+    {
+        "artigo": 0,
+        "alinea": 0,
+        "subalinea": 0,
+        "nome": "Ausência de Seguro na Embarcação",
+        "coima": 75000,
+        "pontos": 0,
+        "prisao_min": 0,
+        "prisao": 0,
+        "prisao_max": 0,
+        "gravidade": 0
+    },
+    {
+        "artigo": 0,
+        "alinea": 0,
+        "subalinea": 0,
+        "nome": "Ausência do Livrete da Embarcação",
+        "coima": 60000,
+        "pontos": 0,
+        "prisao_min": 0,
+        "prisao": 0,
+        "prisao_max": 0,
+        "gravidade": 0
+    },
+    {
+        "artigo": 0,
+        "alinea": 0,
+        "subalinea": 0,
+        "nome": "Ausência de Carta de Navegador",
+        "coima": 125000,
+        "pontos": 0,
+        "prisao_min": 0,
+        "prisao": 0,
+        "prisao_max": 0,
+        "gravidade": 0
+    },
+    {
+        "artigo": 0,
+        "alinea": 0,
+        "subalinea": 0,
+        "nome": "Abalroamento Marítima",
+        "coima": 120000,
+        "pontos": 0,
+        "prisao_min": 0,
+        "prisao": 0,
+        "prisao_max": 0,
+        "gravidade": 0
+    },
+    {
+        "artigo": 0,
+        "alinea": 0,
+        "subalinea": 0,
+        "nome": "Violação de Regras de Navegação",
+        "coima": 90000,
+        "pontos": 0,
+        "prisao_min": 0,
+        "prisao": 0,
+        "prisao_max": 0,
+        "gravidade": 0
+    }
+]

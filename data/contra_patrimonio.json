@@ -1,0 +1,122 @@
+[
+    {
+        "artigo": 35,
+        "alinea": 0,
+        "subalinea": 0,
+        "nome": "Furto",
+        "coima": 25000,
+        "pontos": 0,
+        "prisao_min": 0,
+        "prisao": 2,
+        "prisao_max": 3,
+        "gravidade": 2
+    },
+    {
+        "artigo": 36,
+        "alinea": 0,
+        "subalinea": 0,
+        "nome": "Furto Qualificado",
+        "coima": 50000,
+        "pontos": 0,
+        "prisao_min": 2,
+        "prisao": 5,
+        "prisao_max": 7,
+        "gravidade": 2
+    },
+    {
+        "artigo": 37,
+        "alinea": 0,
+        "subalinea": 0,
+        "nome": "Abuso de Confiança",
+        "coima": 50000,
+        "pontos": 0,
+        "prisao_min": 0,
+        "prisao": 2,
+        "prisao_max": 3,
+        "gravidade": 2
+    },
+    {
+        "artigo": 38,
+        "alinea": 0,
+        "subalinea": 0,
+        "nome": "Furto de Uso de Veículo",
+        "coima": 50000,
+        "pontos": 0,
+        "prisao_min": 0,
+        "prisao": 0,
+        "prisao_max": 1,
+        "gravidade": 1
+    },
+    {
+        "artigo": 39,
+        "alinea": 0,
+        "subalinea": 0,
+        "nome": "Apropriação Ilegítima em caso de Acessão ou de Coisa Achada",
+        "coima": 10000,
+        "pontos": 0,
+        "prisao_min": 0,
+        "prisao": 0,
+        "prisao_max": 1,
+        "gravidade": 1
+    },
+    {
+        "artigo": 40,
+        "alinea": 0,
+        "subalinea": 0,
+        "nome": "Roubo",
+        "coima": 100000,
+        "pontos": 0,
+        "prisao_min": 3,
+        "prisao": 5,
+        "prisao_max": 8,
+        "gravidade": 2
+    },
+    {
+        "artigo": 41,
+        "alinea": 0,
+        "subalinea": 0,
+        "nome": "Dano",
+        "coima": 50000,
+        "pontos": 0,
+        "prisao_min": 0,
+        "prisao": 2,
+        "prisao_max": 2,
+        "gravidade": 2
+    },
+    {
+        "artigo": 42,
+        "alinea": 0,
+        "subalinea": 0,
+        "nome": "Burla",
+        "coima": 50000,
+        "pontos": 0,
+        "prisao_min": 0,
+        "prisao": 2,
+        "prisao_max": 3,
+        "gravidade": 2
+    },
+    {
+        "artigo": 43,
+        "alinea": 0,
+        "subalinea": 0,
+        "nome": "Extorsão",
+        "coima": 50000,
+        "pontos": 0,
+        "prisao_min": 0,
+        "prisao": 3,
+        "prisao_max": 5,
+        "gravidade": 2
+    },
+    {
+        "artigo": 45,
+        "alinea": 0,
+        "subalinea": 0,
+        "nome": "Administração Danosa",
+        "coima": 50000,
+        "pontos": 0,
+        "prisao_min": 0,
+        "prisao": 3,
+        "prisao_max": 5,
+        "gravidade": 2
+    }
+]
