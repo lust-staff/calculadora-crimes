@@ -3,36 +3,28 @@ crimes_adicionados = []
 
 
 async function load_crimes_from_db() {
-    // contraordanacoes_rodoviarias
-    let crimes = await fetch("https://www.crunchypi.xyz/querycrimesdb", {method: "POST", headers: {"Accept": "application/json", "Content-Type": "application/json"}, body: JSON.stringify({"query": "SELECT * FROM contraordenacoes_rodoviarias"})})
-    stored_crimes.contraordenacoes_rodoviarias = await crimes.json();
+  const files = {
+    contraordenacoes_rodoviarias: "data/contraordenacoes_rodoviarias.json",
+    contraordenacoes_nauticas: "data/contraordenacoes_nauticas.json",
+    contra_estado: "data/contra_estado.json",
+    contra_identidade_cultural: "data/contra_identidade_cultural.json",
+    contra_patrimonio: "data/contra_patrimonio.json",
+    contra_pessoas: "data/contra_pessoas.json",
+    contra_vida_sociedade: "data/contra_vida_sociedade.json",
+  };
 
-    // contraordanacoes_nauticas
-    crimes = await fetch("https://www.crunchypi.xyz/querycrimesdb", {method: "POST", headers: {"Accept": "application/json", "Content-Type": "application/json"}, body: JSON.stringify({"query": "SELECT * FROM contraordenacoes_nauticas"})})
-    stored_crimes.contraordenacoes_nauticas = await crimes.json();
+  const loaded = await Promise.all(
+    Object.entries(files).map(async ([key, url]) => {
+      const response = await fetch(url);
+      return [key, await response.json()];
+    })
+  );
 
-    // crimes_contra_estado
-    crimes = await fetch("https://www.crunchypi.xyz/querycrimesdb", {method: "POST", headers: {"Accept": "application/json", "Content-Type": "application/json"}, body: JSON.stringify({"query": "SELECT * FROM contra_estado"})})
-    stored_crimes.contra_estado = await crimes.json();
+  for (const [key, data] of loaded) {
+    stored_crimes[key] = data;
+  }
 
-    // crimes_identidade_cultural
-    crimes = await fetch("https://www.crunchypi.xyz/querycrimesdb", {method: "POST", headers: {"Accept": "application/json", "Content-Type": "application/json"}, body: JSON.stringify({"query": "SELECT * FROM contra_identidade_cultural"})})
-    stored_crimes.contra_identidade_cultural = await crimes.json();
-
-    // crimes_patrimonio
-    crimes = await fetch("https://www.crunchypi.xyz/querycrimesdb", {method: "POST", headers: {"Accept": "application/json", "Content-Type": "application/json"}, body: JSON.stringify({"query": "SELECT * FROM contra_patrimonio"})})
-    stored_crimes.contra_patrimonio = await crimes.json();
-
-    // crimes_pessoas
-    crimes = await fetch("https://www.crunchypi.xyz/querycrimesdb", {method: "POST", headers: {"Accept": "application/json", "Content-Type": "application/json"}, body: JSON.stringify({"query": "SELECT * FROM contra_pessoas"})})
-    stored_crimes.contra_pessoas = await crimes.json();
-
-    // crimes_vida_sociedade
-    crimes = await fetch("https://www.crunchypi.xyz/querycrimesdb", {method: "POST", headers: {"Accept": "application/json", "Content-Type": "application/json"}, body: JSON.stringify({"query": "SELECT * FROM contra_vida_sociedade"})})
-    stored_crimes.contra_vida_sociedade = await crimes.json();
-
-    // When all finished, build the cards
-    search_crimes("");
+  search_crimes("");
 }
 
 /**
